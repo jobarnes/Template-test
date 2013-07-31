@@ -1,0 +1,86 @@
+/* base styles, for the small-screen experience, go here */
+@media all and (min-width: 320px) {
+header.banner {
+	margin-left: 150px;
+	line-height: 1.8em;
+}
+p.sub { /* any reference to header and p (even with a class) causes the global header to move down in browsers other than Firefox. why??? */
+	padding: 20px 0 0 0;
+	margin-bottom: 0;
+}
+header.banner h1 {
+	margin: 5px 0 0 0;
+}
+header.banner a {
+	text-decoration: none;
+}
+main a {
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+}
+nav {
+	background-color: #036;
+	display: block;
+	margin: 40px 0px 30px;
+	width: 100%;
+}
+nav ul {
+	padding-left: 0px;
+}
+nav li {
+	list-style-type: none;
+}
+nav li a {
+	border-bottom: 1px solid #214F80;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 100px 8px 15px;
+}
+nav li li {
+	display: none;
+}
+nav li a:hover {
+	background-color: #39C;
+}
+main {
+	padding-left: 15px;
+}
+}
+/* Tablets ----------- */
+@media all and (min-width: 768px) { 
+nav li {
+	float: left;
+}
+nav li a {
+	border-bottom: none;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) { 
+.wrapper {
+	width: 1210px;
+	margin: auto;
+}
+main {
+	padding-left: 0px;
+}
+/* align footer width with header width */
+#footernav .wrapper {
+	left: -20px !important;
+}
+#footernav ul {
+	right: -20px !important;
+}
+#footernav #footernav-onesixty {
+	left: 460px !important;
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
